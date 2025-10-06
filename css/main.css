@@ -63,8 +63,11 @@ body {
 }
 
 .flowers {
-  position: relative;
-  transform: scale(0.9);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(calc(100vh / 1200));
+  transform-origin: bottom center;
 }
 
 .flower {
@@ -74,6 +77,7 @@ body {
   z-index: 10;
   --fl-speed: 0.8s;
 }
+
 .flower--1 {
   -webkit-animation: moving-flower-1 4s linear infinite;
   animation: moving-flower-1 4s linear infinite;
