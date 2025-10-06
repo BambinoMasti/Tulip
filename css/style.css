@@ -68,3 +68,24 @@ body{
         font-size: .5rem;
     }
 }
+.title {
+  position: absolute;
+  top: 3vmin;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 0 20px #39c6d6, 0 0 40px #39c6d6, 0 0 80px #39c6d6;
+  animation: glowText 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 10px #39c6d6, 0 0 30px #39c6d6;
+  }
+  to {
+    text-shadow: 0 0 20px #23f0ff, 0 0 60px #23f0ff, 0 0 100px #23f0ff;
+  }
+}
+
